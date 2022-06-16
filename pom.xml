@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <version>2.5.10</version>
+    </parent>
+
+    <groupId>com.glj</groupId>
+    <artifactId>java-labs-parent</artifactId>
+    <version>${revision}</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>lab-001-mapstruct</module>
+        <module>lab-002-mybatis</module>
+    </modules>
+
+    <name>${project.artifactId}</name>
+    <description>该项目为 Java-Labs，包含多种 Java 相关知识点的 demo</description>
+
+    <properties>
+        <revision>1.8</revision>
+    </properties>
+
+</project>
