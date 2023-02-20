@@ -19,6 +19,8 @@
         <module>lab-001-mapstruct</module>
         <module>lab-002-mybatis</module>
         <module>lab-003-dubbo</module>
+        <module>lab-004-spring-bean</module>
+        <module>lab-005-spring-security</module>
     </modules>
 
     <name>${project.artifactId}</name>

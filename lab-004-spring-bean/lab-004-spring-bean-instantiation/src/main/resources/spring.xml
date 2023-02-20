@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.glj.javalabs.lab004.demo1.Bean1" id="bean1" />
+
+    <bean class="com.glj.javalabs.lab004.demo2.Bean2Factory"
+          factory-method="getBean2"
+          id="bean2"/>
+
+    <bean class="com.glj.javalabs.lab004.demo3.Bean3Factory" id="bean3Factory" />
+    <bean class="com.glj.javalabs.lab004.demo3.Bean3"
+          factory-bean="bean3Factory"
+          factory-method="getBean3"
+          id="bean3"/>
+
+    <!-- 给bean起别名方式1：name-->
+    <!-- name方式可给一个bean起多个别名 -->
+    <bean class="com.glj.javalabs.lab004.demo4.Bean4"
+          id="bean4"
+          name="bean4_1,bean4_2"/>
+
+    <!-- 给bean起别名方式2：alias-->
+    <!-- alias方式给一个bean只能起1个别名-->
+    <alias name="bean4" alias="bean4_3"/>
+</beans>

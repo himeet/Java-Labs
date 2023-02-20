@@ -29,6 +29,10 @@ public class ConsumerApp {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(ConsumerApp.class, args);
+        String[] beanNames = context.getBeanDefinitionNames();
+        for (String name : beanNames) {
+            System.out.println(name);
+        }
     }
 
     @Component
